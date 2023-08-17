@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  text-align: center;
+  background: url(bg.svg) no-repeat bottom #001220;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.btn {
+  @apply font-medium rounded-lg p-3 m-2;
+}
+
+.btn--primary {
+  @apply bg-sky-500 text-white w-16 text-xl;
 }
